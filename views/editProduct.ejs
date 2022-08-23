@@ -1,0 +1,89 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Saurav">
+    <link href="/css/product_form/bootstrap.min.css" rel="stylesheet">
+    <title>Update Product</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="logo.jpg" alt="" width="72" height="72">
+            <h2>Edit The Product Details</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" action="/product/update/<%=record.id%>">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Name" value="<%=record.name%>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Brand</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Brand" value="<%=record.brand%>"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Category </label>
+                        <input type="text" class="form-control" id="address" value="<%=record.category%>"
+                    </div>
+                 
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Description</label>
+                        <input type="text" class="form-control" id="address"  value="<%=record.description%>"
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Price </label>
+                        <input type="text" class="form-control" id="address"  value="<%=record.price%>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Count In Stock </label>
+                        <input type="text" class="form-control" id="address" value="<%=record.countInStock%>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Ratings</label>
+                        <input type="text" class="form-control" id="address" value="<%=record.rating%>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Number of Reviews</label>
+                        <input type="text" class="form-control" id="address" value="<%=record.numReviews%>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Image</label>
+                        <input type="text" class="form-control" id="address"  value="<%=record.image%>">
+                    </div>
+
+
+                        <hr class="mb-4">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                    </form>
+            </div>
+        </div>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2020-2021 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

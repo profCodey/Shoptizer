@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Nawill Stores | Admin Dashbaord </title>
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Welcome to Nawill Online store">
+    <meta content="Eccomerce, Online Store, Shopping" name="keywords">
+</head>
+
+<body>
+    <!-- Move to up button -->
+
+    <!-- navgaition menu -->
+
+    </nav>
+    <!-- Shops Section Start -->
+    <section class="services" id="services">
+        <div class="content">
+            <h1>ADMIN DASHBOARD</h1>
+            <!-- <div class="title"><span>Admin Dashboard</span></div> -->
+            <a href="/product/add"><button class="btn btn-secondary newprod"> Add New Product </button></a>
+            <h2>Products</h2>
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Image</th>
+                    <th>Brand</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Count in Stock</th>
+                    <th>Rating</th>
+                    <th>reviews</th>
+                    <th>Created At</th>
+                    <th>Last Updated </th>
+                    <th>Edit Product</th>
+                    <th>Delete Product </th>
+                </tr>
+                <%for(let product of record.product){ %>
+                    <% id=product.id %>
+                        <tr>
+                            <td>
+                                <%=product.name%>
+                            </td>
+                            <td>
+                                <img src="<%=product.image%>" alt="" height="25px" width="25px">
+                            </td>
+                            <td>
+                                <%=product.brand%>
+                            </td>
+                            <td>
+                                <%=product.category%>
+                            </td>
+                            <td>
+                                <%=product.description%>
+                            </td>
+                            <td>
+                                <%=product.price%>
+                            </td>
+                            <td>
+                                <%=product.countInStock%>
+                            </td>
+                            <td>
+                                <%=product.rating%>
+                            </td>
+                            <td>
+                                <%=product.numReviews%>
+                            </td>
+                            <td>
+                                <%=product.createdAt.toDateString() + " " + new Date().toLocaleTimeString()%>
+                            </td>
+                            <td>
+                                <%=product.updatedAt.toDateString() + " " + new Date().toLocaleTimeString()%>
+                            </td>
+                            <td>
+                                <button><a href="/product/update/<%=product.id%>"
+                                        class="btn btn-sm editbtn">Edit</a></button>
+                            </td>
+                            <td>
+                                <!-- add this guy later to implement modal data-toggle="modal" data-target="#deleteModal" -->
+                                <form action="/product/delete/<%= product.id %>" method="post">
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                            </td>
+                            <%}%>
+                        </tr>
+            </table>
+    </section>
+    <div class="content">
+    </div>
+    <style>
+        h1{
+            margin-left: auto;
+           text-align: center;        
+        }
+        .newprod{
+            margin-right: 40px;
+  text-align: right;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        editbtn{
+               background-color: orange;
+        }
+
+        td,
+        th {
+            border: 1px solid green;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: green;
+        }
+    </style>
+    <!-- Footer Section Start -->
+    <br>
+    <footer>
+        <div class="text">
+            <span>Shoptizer| &#169; 2022 All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="/src/script.js"></script>
+</body>
+
+</html> -->

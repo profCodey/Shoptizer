@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="/css/productTable"/>
+</head>
+                <p><%=record.name%></p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card">
+                <h1 class="card-title text-center">UPDATE PRODUCT</h1>
+                <div class="card-body py-md-4">
+                    <form _lpchecked="1">
+                        <div class="form-group">
+                                <label>Product Name</label><br>
+                            <input type="text" class="form-control" name="name"  value="<%=record.name%>"><br>
+                        </div>
+                        <div class="form-group">
+                        <label>Brand</label><br>
+                            <input type="text" class="form-control" name="brand" value="<%=record.brand%>"><br>
+                        </div>
+                        <div class="form-group">
+                            <label>Category</label><br>
+                            <input type="text" class="form-control" name="category" value="<%=record.category%>"><br>
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label><br>
+                            <input type="text" class="form-control" name="name" value="<%=record.description%>"><br>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label><br>
+                            <input type="text" class="form-control" name="price" value="<%=record.price%>"><br>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label><br>
+                            <input type="text" class="form-control" name="price" value="<%=record.price%>"><br>
+                        </div>
+                       
+
+
+
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <a href="#">Login</a>
+                            <button class="btn btn-primary">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
