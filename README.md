@@ -1,4 +1,4 @@
-# EXPRESS
+# E-COMMERCE WEBSITE WITH EJS
 
 ### Setup
 
